@@ -24,68 +24,72 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <main>
-      <section class="products-section">
-        <div class="products conteiner">
-          <p class="products__undertitle">100% natural</p>
-          <h2 class="products__title">Products</h2>
-          <ul class="products__list">
-            <!-- Ice cream cards -->
-            <li class="products__item">
-              <h3 class="products__subtitle">Ice cream</h3>
-              <p class="products__discription">
-                Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
-                stabilizer
-              </p>
-              <button class="product__btn" type="button">
-                <img
-                  src="./images/Frame_54.png"
-                  width="40"
-                  height="40"
-                  alt="Кнопочка в виде стрелочки"
-                />
-              </button>
-            </li>
+      <!-- <div class="backdrop is-hidden" data-modal> -->
+      <div class="modal conteiner">
+        <!-- Button close -->
+        <button class="modal-button" data-modal-close type="button">
+          <svg class="svg-modal-close" width="18" height="18">
+            <use href="./images/sprite.svg#close1"></use>
+          </svg>
+        </button>
 
-            <!-- Ice coffee cards -->
-            <li class="products__item">
-              <h3 class="products__subtitle">Ice coffee</h3>
-              <p class="products__discription">
-                Fragrant invigorating drink created from 100% natural ingredients without the use of
-                preservatives and flavor enhancers
-              </p>
-              <button class="product__btn" type="button">
-                <img
-                  src="./images/Frame_54.png"
-                  width="40"
-                  height="40"
-                  alt="Кнопочка в виде стрелочки"
-                />
-              </button>
-            </li>
+        <!-- Contents section -->
 
-            <!-- Milkshakes cards -->
-            <li class="products__item">
-              <h3 class="products__subtitle">Milkshakes</h3>
-              <p class="products__discription">
-                Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries
-                and other sweets of your choice
-              </p>
-              <button class="product__btn" type="button">
-                <img
-                  src="./images/Frame_54.png"
-                  width="40"
-                  height="40"
-                  alt="Кнопочка в виде стрелочки"
-                />
-              </button>
-            </li>
+        <p>Chololate icecream</p>
+
+        <!-- Comound group -->
+
+        <div>
+          <ul>
+            <li><span>kcal</span><span>320</span></li>
+            <li><span>Protein...</span><span>4g</span></li>
+            <li><span>Fats</span><span>8,2g</span></li>
+            <li><span>Carbs</span><span>40,4g</span></li>
           </ul>
         </div>
-      </section>
+
+        <strong>Ingredients</strong>
+
+        <!-- Ingridient group -->
+        <div>
+          <ul>
+            <li><span>Milk</span><span>100ml</span></li>
+            <li><span>Belgian chocolate</span><span>20g</span></li>
+            <li><span>Cream</span><span>150ml</span></li>
+            <li><span>Cocoa powder</span><span>30g</span></li>
+            <li><span>Sugar</span><span> 40g</span></li>
+            <li><span>Vanilla sugar</span><span>10g</span></li>
+          </ul>
+        </div>
+
+        <!-- Modal -->
+        <form class="register-form" name="register-form">
+          <div class="register-form-group" role="group">
+            <label class="register-form-label">
+              <input class="register-form-input" type="text" name="user-name" placeholder="Name" />
+            </label>
+
+            <label class="register-form-label">
+              <input class="register-form-input" type="tel" name="user-phone" placeholder="Phone" />
+            </label>
+
+            <label class="register-form-label">
+              <textarea
+                class="register-form-message"
+                name="register-messege"
+                rows="5"
+                placeholder="Coment"
+              ></textarea>
+            </label>
+          </div>
+          <button class="register-form-btn button" type="submit">Відправити</button>
+        </form>
+      </div>
+      <!-- </div> -->
     </main>
   </body>
 </html>

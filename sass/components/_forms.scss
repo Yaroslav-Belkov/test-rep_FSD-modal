@@ -1,5 +1,11 @@
 // block 15
 
+.modal {
+  display: block;
+  width: 400px;
+  height: 400px;
+}
+
 .register-form__title {
   display: block;
   text-align: center;
@@ -9,21 +15,14 @@
   color: var(--soft-color);
   margin-bottom: 12px;
   line-height: 1.5;
-  
-  @media screen and (min-width:1200px) {
+
+  @media screen and (min-width: 1200px) {
     line-height: 1.15;
   }
-
 }
 
 .register-form__group {
   margin-bottom: 20px;
-}
-
-.register-form__label {
-  position: relative;
-  display: block;
-  margin-bottom: 10px;
 }
 
 .register-form__name {
@@ -36,7 +35,6 @@
 }
 
 .register-form__input {
-
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -54,8 +52,8 @@
   border-color: var(--button-color);
 }
 
-.register-form__input:focus+.register-form__icons,
-.register-form__input:not(:placeholder-shown)+.register-form__icons {
+.register-form__input:focus + .register-form__icons,
+.register-form__input:not(:placeholder-shown) + .register-form__icons {
   fill: var(--button-color);
   border-color: var(--button-color);
 }
@@ -82,11 +80,10 @@
   margin: 0 auto;
   border: none;
   font-family: inherit;
-
 }
 
 .register-form__btn:hover {
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .register-form__message {
@@ -116,7 +113,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
-
 }
 
 .register-form__destribut {
@@ -126,14 +122,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--contacts-color);
   user-select: none;
 
-
-  @media screen and (min-width: 1200px ) {
-
-  line-height: 1.71;
-  font-size: 14px;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.71;
+    font-size: 14px;
   }
-
- 
 }
 
 .terms-contract {
@@ -141,10 +133,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--hover-color);
-
 }
-
-
 
 .register-form__message::placeholder {
   font-size: 12px;
@@ -157,9 +146,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   opacity: 0;
 }
 
-.register-form__checkbox:checked+.register-form__icons--checked .icon-checked {
+.register-form__checkbox:checked + .register-form__icons--checked .icon-checked {
   opacity: 1;
-
 }
 
 .icon-unchecked {
@@ -167,6 +155,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   fill: var(--nav-color);
 }
 
-.register-form__checkbox:checked+.register-form__icons--checked .icon-unchecked {
+.register-form__checkbox:checked + .register-form__icons--checked .icon-unchecked {
   opacity: 0;
 }
