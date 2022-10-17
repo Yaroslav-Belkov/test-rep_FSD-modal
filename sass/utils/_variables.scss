@@ -1,0 +1,39 @@
+// block 1
+
+:root {
+  --brand-color-left: #2196F3;
+  --brand-color-right: #000000;
+  --brand-color-fut: #FFFFFF;
+  --hover-color: #2196F3;
+  --nav-color: #212121;
+  --contacts-color: #757575;
+  --hero-bg-color: #2F303A;
+  --light-collor: #FFFFFF;
+  --button-color: #2196F3;
+  --button-hover-color: #188CE8;
+  --spec-content-color: #757575;
+  --team-content-color: #F5F4FA;
+  --footer-color: #2F303A;
+  --cont-foot-color: #ffffff99;
+  --button-filters-color: #F5F4FA;
+  --portfolio-content-color: #757575;
+  --soft-color: #212121;
+  --border-color-top: #ECECEC;
+  --icons-color: #AFB1B8;
+  --hover-overley: rgba(33, 150, 243, 0.9);
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --last-font: 'Seymour One', sans-serif; 
+}
+
+
+/* Базовые стили */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: var(--soft-color);
+  letter-spacing: 0.03em;
+  background-color: var(--light-collor);
+  
+  
+
+}

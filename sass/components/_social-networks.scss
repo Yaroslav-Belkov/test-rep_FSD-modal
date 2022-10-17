@@ -1,0 +1,37 @@
+// block 9
+
+.social__list {
+  display: flex;
+  justify-content: center;
+}
+
+.social__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: var(--icons-color);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.soc-icons {
+  fill: currentColor;
+}
+
+.social__item {
+  margin-top: 16px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link:hover,
+.social__link:focus {
+  color: var(--light-collor);
+  background-color: var(--hover-color);
+}

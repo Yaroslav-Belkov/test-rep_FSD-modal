@@ -1,0 +1,32 @@
+// bloc 2
+
+
+.logo {
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--brand-color-left);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+
+.logo__studio--dark {
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--brand-color-right);
+}
+
+
+.logo__studio--light {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--brand-color-fut);
+}

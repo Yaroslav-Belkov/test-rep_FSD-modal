@@ -1,0 +1,72 @@
+//  block 10
+
+.regular__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  border: 1px solid var(--icons-color);
+  color: var(--icons-color);
+  border-radius: 4px;
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+}
+
+
+.regular__list {
+  display: flex;
+flex-wrap: wrap;
+margin: -15px;
+
+  // desktop 
+  @media screen and (min-width:1200px) {
+    justify-content: center;
+    align-self: center; 
+  }
+
+}
+
+
+.regular__item {
+  margin: 15px;
+@media screen and (max-width:767px) {
+  width: calc((100% - 4 * 15px) / 2);
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+  width: calc((100% - 6 * 15px) / 3);
+}
+
+@media screen and (min-width:1200px) {
+  width: calc((100% - 12 * 15px) / 6);
+}
+}
+
+
+.regular__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 30px;
+
+
+// dasktop
+  @media screen and (min-width:1200px) {
+    font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+  }
+}
+
+.regular__link:hover,
+.regular__link:focus {
+  color: var(--hover-color);
+  border: 1px solid var(--hover-color);
+}
+
+.svg-icons {
+  fill: currentColor;
+}
